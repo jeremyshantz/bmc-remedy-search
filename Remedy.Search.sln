@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remedy.Search", "Remedy.Search\Remedy.Search.csproj", "{F70D475A-70BC-4B43-9A72-DED9B8F35ADC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remedy.Search.Tests", "Remedy.Search.Tests\Remedy.Search.Tests.csproj", "{A6FF04AB-1218-4EA6-9AA1-1FF7CBBF4245}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F70D475A-70BC-4B43-9A72-DED9B8F35ADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F70D475A-70BC-4B43-9A72-DED9B8F35ADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F70D475A-70BC-4B43-9A72-DED9B8F35ADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F70D475A-70BC-4B43-9A72-DED9B8F35ADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6FF04AB-1218-4EA6-9AA1-1FF7CBBF4245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6FF04AB-1218-4EA6-9AA1-1FF7CBBF4245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6FF04AB-1218-4EA6-9AA1-1FF7CBBF4245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6FF04AB-1218-4EA6-9AA1-1FF7CBBF4245}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

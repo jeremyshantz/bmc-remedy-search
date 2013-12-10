@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F70D475A-70BC-4B43-9A72-DED9B8F35ADC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Remedy</RootNamespace>
+    <AssemblyName>Remedy.Search</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search\Query\IStringFields.cs" />
+    <Compile Include="Search\Query\IStringClauses.cs" />
+    <Compile Include="Search\Query\IPeopleFields.cs" />
+    <Compile Include="Search\Query\IDateFields.cs" />
+    <Compile Include="Search\Query\IPersonClauses.cs" />
+    <Compile Include="Search\Query\IStatusClauses.cs" />
+    <Compile Include="Search\Query\IDateClauses.cs" />
+    <Compile Include="Search\Query\Interval.cs" />
+    <Compile Include="Search\Query\Providers\IQualProvider.cs" />
+    <Compile Include="Search\Query\Providers\ReadAbleProvider.cs" />
+    <Compile Include="Search\Query\ClauseOperator.cs" />
+    <Compile Include="Search\Query\Clauses\ClauseComparer.cs" />
+    <Compile Include="Search\Query\Clauses\ValuePair.cs" />
+    <Compile Include="Search\Query\Clauses\IPairsGroupClause.cs" />
+    <Compile Include="Search\Query\Clauses\GroupClause.cs" />
+    <Compile Include="Search\Query\Clauses\FieldIDClause.cs" />
+    <Compile Include="Search\Query\Clauses\PairsGroupClause.cs" />
+    <Compile Include="Search\Query\Clauses\ValueClause.cs" />
+    <Compile Include="Search\Query\Clauses\IStatusGroupClause.cs" />
+    <Compile Include="Search\Query\Clauses\IValueClause.cs" />
+    <Compile Include="Search\Query\Clauses\StatusGroupClause.cs" />
+    <Compile Include="Search\Query\Clauses\GroupFieldIDClause.cs" />
+    <Compile Include="Search\Query\Clauses\IGroupClause.cs" />
+    <Compile Include="Search\Query\Clauses\Clauses.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Search\Query\Clauses\IStoredClauseSet.cs" />
+    <Compile Include="Search\Query\IFirstAndLastName.cs" />
+    <Compile Include="Search\Query\IQueryBuilder.cs" />
+    <Compile Include="Search\Query\Operator.cs" />
+    <Compile Include="Search\Query\StatusType.cs" />
+    <Compile Include="Search\Query\DateTimeExtensions.cs" />
+    <Compile Include="Search\Query\FirstAndLastName.cs" />
+    <Compile Include="Search\Query\QueryBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Search\Query\QueryBuilderExtensions.cs" />
+    <Compile Include="Search\Query\SearchField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Search\Query\Clauses\StoredClauseSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
